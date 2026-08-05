@@ -1,0 +1,2 @@
+# Amanda
+https://wiki.c2.com/?BlubParadox
