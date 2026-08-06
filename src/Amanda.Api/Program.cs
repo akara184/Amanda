@@ -1,5 +1,6 @@
 using Amanda.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Amanda.Application.Services.User;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,11 +15,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOpenApi();
 
-// Pegar a conexao
+// Pegar a conexao, options. me dar possibilidade de escolher outros bancos de dados
+// isso é muito bom, parece que todo ambiete é voltado para um BD evolutivo 
 builder.Services.AddDbContext<UserDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<IUserService, UserServices>();
 
 
 var app = builder.Build();
