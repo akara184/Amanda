@@ -1,2 +1,8 @@
 <Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Amanda.Api/Amanda.Api.csproj" />
+    <Project Path="src/Amanda.Application/Amanda.Application.csproj" />
+    <Project Path="src/Amanda.Domain/Amanda.Domain.csproj" />
+    <Project Path="src/Amanda.Infrastructure/Amanda.Infrastructure.csproj" />
+  </Folder>
 </Solution>

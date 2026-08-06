@@ -1,0 +1,16 @@
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/bin/Debug/net10.0/Amanda.Infrastructure.deps.json
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/bin/Debug/net10.0/Amanda.Infrastructure.dll
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/bin/Debug/net10.0/Amanda.Infrastructure.pdb
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/bin/Debug/net10.0/Amanda.Domain.dll
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/bin/Debug/net10.0/Amanda.Domain.pdb
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.csproj.AssemblyReference.cache
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.AssemblyInfoInputs.cache
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.AssemblyInfo.cs
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.csproj.CoreCompileInputs.cache
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.sourcelink.json
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.I.A3364C52.Up2Date
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.dll
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/refint/Amanda.Infrastructure.dll
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/Amanda.Infrastructure.pdb
+/home/akara184/projects/lambda/src/Amanda.Infrastructure/obj/Debug/net10.0/ref/Amanda.Infrastructure.dll

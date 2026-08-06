@@ -1,0 +1,12 @@
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Application.deps.json
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Application.dll
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Application.pdb
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.AssemblyInfoInputs.cache
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.AssemblyInfo.cs
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.csproj.CoreCompileInputs.cache
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.sourcelink.json
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.dll
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/refint/Amanda.Application.dll
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.pdb
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/ref/Amanda.Application.dll
