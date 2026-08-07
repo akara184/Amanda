@@ -33,12 +33,25 @@ public class UserServices : IUserService {
 
         return users;
 
-        // Tem como melhorar a lógica
+        // Tem como melhorar a lógica, deixo isso para depois
     }
     
     public async Task<UserResponseModel?> getUserByIdAsync(int Id){
 
-        throw new NotImplementedException();
+        var userById = await _context.Users.FindAsync(Id);
+
+        if (userById is null){
+            return null;
+        }
+        
+        var userResponse = new UserResponseModel
+        {
+            Id = userById.Id,
+            Username = userById.Username,
+            Email = userById.Email,
+        };
+
+        return userResponse;
 
     }
     public async Task<UserResponseModel> createUserAsync(UserRequestModel request){
@@ -48,7 +61,7 @@ public class UserServices : IUserService {
 
         var getDupUser = _context.Users.Where(db => db.Email == request.Email || db.Username == request.Username);
 
-        var createUser = new User
+        var createrUser = new User
         {
             Username = request.Username,
             Email  = request.Email,
@@ -56,29 +69,44 @@ public class UserServices : IUserService {
             Date_time = localDate,
         };
 
-        _context.Users.Add(createUser);
+        _context.Users.Add(createrUser);
         await _context.SaveChangesAsync();
         
-        var cleanUser = new UserResponseModel
+        var returnUser = new UserResponseModel
         {
-            Id = createUser.Id,
-            Username = createUser.Username,
-            Email = createUser.Email,
+            Id = createrUser.Id,
+            Username = createrUser.Username,
+            Email = createrUser.Email,
         };
 
-        return cleanUser;
+        return returnUser;
 
     }
 
     public async Task<bool> updateUserAsync(int id, UserRequestModel request){
 
-        throw new NotImplementedException();
+        var user_db = await _context.Users.Where(db => db.Id == id);
+
+        
+
     }
 
     public async Task<bool> deleteUserAsync(int id){
+
+        var deleteUser = await _context.Users.FindAsync(id);
         
-        throw new NotImplementedException();
+        if (deleteUser is null)
+        {
+            return false;
+        }
+
+        _context.Users.Remove(deleteUser);
+        await _context.SaveChangesAsync();
         
+        return true; // 
+
+
+
     }
 
     
