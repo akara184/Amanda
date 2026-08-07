@@ -19,18 +19,17 @@ public class UserController : ControllerBase
 
 
     [HttpGet("/users/")]
-    public async Task<ActionResult<IEnumerable<UserRequestModel>>> GetAllUserAsync(){
+    public async Task<ActionResult<IEnumerable<UserRequestModel>>> getAllUserAsync(){
 
-        var users = await _userInterface.GetAllUsersAsync();
+        var users = await _userInterface.getAllUsersAsync();
         return Ok(users);
     }
 
 
     [HttpPost("/users/")]
-    public async Task<ActionResult<UserResponseModel>> CreateUserAsync(UserResponseModel request){
-        var createUsers = await _userInterface.CreateUserAsync(request);
+    public async Task<ActionResult<UserResponseModel>> CreateUserAsync(UserRequestModel request){
+        var createUsers = await _userInterface.createUserAsync(request);
         return Ok(createUsers);
     }
-
     
 }

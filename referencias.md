@@ -31,10 +31,6 @@
 23. 
 
 
-o EF CORE é legal, meio que o ambiente te guia a fazer um banco de dados evolutivo, e EF core é fácil de usar 
-
-
-estava colocado tbm em Async 
 
 
 
@@ -58,7 +54,7 @@ estava colocado tbm em Async
    o objetivo seria somente criar um endpoint e usar swagger para manipular eles
 6. Por algum motivo isso tudo me lembra muito fazendo ts + angular na faculdade
 7. É tentador em OOP criar custom exceptions, mas estou com uma baita preguiça
-
+8. to com preguiça de colocar msg bnt de erro, entao só vai ser só erro mesmo 
 
 ## Carol só fala:
 - projeto precisa ficar registrando o slnx 

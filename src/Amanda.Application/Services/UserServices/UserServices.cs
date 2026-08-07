@@ -9,7 +9,6 @@ namespace Amanda.Application.Services.UserServices;
 
 public class UserServices : IUserService {
 
-
     // um truquezinho de injeção, para os metodos usar o _context é necessário aparecer no costrutor 
     private readonly UserDbContext _context;
 
@@ -17,13 +16,13 @@ public class UserServices : IUserService {
         _context = context;
     }
 
-    public  async Task<IEnumerable<UserRequestModel>> GetAllUsersAsync(){
+    public  async Task<IEnumerable<UserResponseModel>> getAllUsersAsync(){
 
         var getUsersCatalog = await _context.Users.ToListAsync();
 
         var users = getUsersCatalog.Select(users =>
         {
-            var allUsers = new UserRequestModel
+            var allUsers = new UserResponseModel
             {
                 Id = users.Id,
                 Username = users.Username,
@@ -37,12 +36,12 @@ public class UserServices : IUserService {
         // Tem como melhorar a lógica
     }
     
-    public async Task<UserRequestModel?> GetUserByIdAsync(int Id){
+    public async Task<UserResponseModel?> getUserByIdAsync(int Id){
 
         throw new NotImplementedException();
 
     }
-    public async Task<UserResponseModel> CreateUserAsync(UserRequestModel request){
+    public async Task<UserResponseModel> createUserAsync(UserRequestModel request){
         
         // UserResponseModel userModel = new UserResponseModel();
         DateTime localDate = DateTime.UtcNow;
@@ -69,17 +68,14 @@ public class UserServices : IUserService {
 
         return cleanUser;
 
-
     }
 
-    public async Task<bool> UpdateUserAsync(int id, UserResponseModel request){
+    public async Task<bool> updateUserAsync(int id, UserRequestModel request){
 
         throw new NotImplementedException();
     }
 
-    public async Task<bool> DeleteUserAsync(int id){
-
-
+    public async Task<bool> deleteUserAsync(int id){
         
         throw new NotImplementedException();
         
