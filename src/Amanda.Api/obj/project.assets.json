@@ -794,6 +794,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Amanda.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Amanda.Domain": "1.0.0",
+          "Amanda.Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "10.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Amanda.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Amanda.Application.dll": {}
+        }
+      },
       "Amanda.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2741,6 +2756,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Amanda.Application/1.0.0": {
+      "type": "project",
+      "path": "../Amanda.Application/Amanda.Application.csproj",
+      "msbuildProject": "../Amanda.Application/Amanda.Application.csproj"
+    },
     "Amanda.Domain/1.0.0": {
       "type": "project",
       "path": "../Amanda.Domain/Amanda.Domain.csproj",
@@ -2754,6 +2774,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Amanda.Application >= 1.0.0",
       "Amanda.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10",
@@ -2785,6 +2806,9 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
+            "/home/akara184/projects/lambda/src/Amanda.Application/Amanda.Application.csproj": {
+              "projectPath": "/home/akara184/projects/lambda/src/Amanda.Application/Amanda.Application.csproj"
+            },
             "/home/akara184/projects/lambda/src/Amanda.Infrastructure/Amanda.Infrastructure.csproj": {
               "projectPath": "/home/akara184/projects/lambda/src/Amanda.Infrastructure/Amanda.Infrastructure.csproj"
             }

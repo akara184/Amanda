@@ -17,4 +17,4 @@ namespace Amanda.Infrastructure.Data
 
 // esse base é igual o super em java
 
-// Meu UserDbContext tem um construtor que recebe um parâmetro chamado options. Quando esse construtor for chamad//o, passe esse mesmo options para o construtor da classe pai DbContext. (texto gerado pelo Gemini)
+// Meu UserDbContext tem um construtor que recebe um parâmetro chamado options. Quando esse construtor for chamad//o, passe esse mesmo options para o construtor da classe pai DbContext. (texto gerado pelo Gemini para entendero base )

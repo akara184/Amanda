@@ -1,11 +1,11 @@
 using Amanda.Application.Models;
 
-namespace Amanda.Application.Services.User;
+namespace Amanda.Application.Services.UserServices;
 
 public interface IUserService
 {
     
-    Task<IEnumerable<UserResponseModel>> GetAllUsersAsync();
+    Task<IEnumerable<UserRequestModel>> GetAllUsersAsync();
     
     Task<UserResponseModel?> GetUserByIdAsync(int Id);
 

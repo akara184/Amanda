@@ -1,5 +1,6 @@
 ## Julia: 
-0. projeto de referência GNU do dunossauro: https://fastapidozero.dunossauro.com 
+0. projeto de referência GNU do dunossauro: https://fastapidozero.dunossauro.com e https://github.com/dotnet-architecture/eShopOnWbe
+ 
 0.1.  objetivos:
      - Aprender sobre clean architecture e o ambiente .NET/ASPNET
 
@@ -27,6 +28,16 @@
 20. https://learn.microsoft.com/en-us/archive/msdn-technet-forums/1ad08507-6dcc-44d1-ba86-2147a8fb1924 < diferença do notation do email
 21. https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0 < sobre dependências
 22. 
+23. 
+
+
+o EF CORE é legal, meio que o ambiente te guia a fazer um banco de dados evolutivo, e EF core é fácil de usar 
+
+
+estava colocado tbm em Async 
+
+
+
 
 
 ## Flavia:
@@ -46,7 +57,7 @@
 5. Preciso ver um tal de Razor, é algo para poder criar um website mais fácil? nao sei se vou usar,
    o objetivo seria somente criar um endpoint e usar swagger para manipular eles
 6. Por algum motivo isso tudo me lembra muito fazendo ts + angular na faculdade
-
+7. É tentador em OOP criar custom exceptions, mas estou com uma baita preguiça
 
 
 ## Carol só fala:
@@ -61,6 +72,7 @@ dotnet add reference ../Amanda.Domain/Amanda.Domain.csproj
 
 
 preciso do EF para criar as referencias pro banco: 
+
 dotnet ef migrations add CreatingDatabase \
   -p src/Amanda.Infrastructure \
   -s src/Amanda.Api
@@ -72,5 +84,17 @@ Criar as tabelas no DB
 dotnet ef database update \
   -p src/Amanda.Infrastructure \
   -s src/Amanda.Api
-  
+
+
+
+
+
+dotnet ef migrations add NomeDescritivoDaMudanca -p src/Amanda.Infrastructure -s src/Amanda.Api
+dotnet ef database update -p src/Amanda.Infrastructure -s src/Amanda.Api
+
+dotnet ef migrations list -p src/Amanda.Infrastructure -s src/Amanda.Api
+
+
+dotnet ef database drop -p src/Amanda.Infrastructure -s src/Amanda.Api
+dotnet ef database update -p src/Amanda.Infrastructure -s src/Amanda.Api
 

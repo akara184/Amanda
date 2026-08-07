@@ -2,6 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Amanda.Infrastructure\Amanda.Infrastructure.csproj" />
+    <ProjectReference Include="..\Amanda.Domain\Amanda.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
   </ItemGroup>
 
   <PropertyGroup>

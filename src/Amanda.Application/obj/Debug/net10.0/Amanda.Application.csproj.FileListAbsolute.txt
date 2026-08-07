@@ -10,3 +10,9 @@
 /home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/refint/Amanda.Application.dll
 /home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.pdb
 /home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/ref/Amanda.Application.dll
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Domain.dll
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Infrastructure.dll
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Infrastructure.pdb
+/home/akara184/projects/lambda/src/Amanda.Application/bin/Debug/net10.0/Amanda.Domain.pdb
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.Application.csproj.AssemblyReference.cache
+/home/akara184/projects/lambda/src/Amanda.Application/obj/Debug/net10.0/Amanda.A.E23412EE.Up2Date

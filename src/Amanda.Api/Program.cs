@@ -1,6 +1,6 @@
 using Amanda.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Amanda.Application.Services.User;
+using Amanda.Application.Services.UserServices;
 
 var builder = WebApplication.CreateBuilder(args);
 

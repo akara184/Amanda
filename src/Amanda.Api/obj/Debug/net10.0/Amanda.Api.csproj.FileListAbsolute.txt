@@ -130,3 +130,5 @@
 /home/akara184/projects/lambda/src/Amanda.Api/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /home/akara184/projects/lambda/src/Amanda.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /home/akara184/projects/lambda/src/Amanda.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/akara184/projects/lambda/src/Amanda.Api/bin/Debug/net10.0/Amanda.Application.dll
+/home/akara184/projects/lambda/src/Amanda.Api/bin/Debug/net10.0/Amanda.Application.pdb
