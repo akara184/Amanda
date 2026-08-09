@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Amanda.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e72ea968269761c5377c8b98352189752105bdfb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb1b04af21d53e1bc375b52b7df674f7ce6bc757")]
 [assembly: System.Reflection.AssemblyProductAttribute("Amanda.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Amanda.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

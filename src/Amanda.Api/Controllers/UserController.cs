@@ -19,23 +19,23 @@ public class UserController : ControllerBase
 
 
     [HttpGet("/users/")]
-    public async Task<ActionResult<IAsyncEnumerable<UserRequestModel>>> getAllUserAsync(){
+    public async Task<ActionResult<IAsyncEnumerable<UserRequestModel>>> GetAllUserAsync(){
 
-        var users = await _userInterface.getAllUsersAsync();
+        var users = await _userInterface.GetAllUsersAsync();
         return Ok(users);
     }
 
 
     [HttpPost("/users/")]
     public async Task<ActionResult<UserResponseModel>> CreateUserAsync(UserRequestModel request){
-        var createUsers = await _userInterface.createUserAsync(request);
+        var createUsers = await _userInterface.CreateUserAsync(request);
         return Ok(createUsers);
     }
 
     [HttpGet("/users/{id}")]
-    public async Task<IActionResult> getUserByIdAsync(int id)
+    public async Task<IActionResult> GetUserByIdAsync(int id)
     {
-        var user = await _userInterface.getUserByIdAsync(id);
+        var user = await _userInterface.GetUserByIdAsync(id);
         if (user is null)
         {
             return NotFound();
@@ -47,8 +47,19 @@ public class UserController : ControllerBase
     [HttpDelete("/users/{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var deleted = await _userInterface.deleteUserAsync(id);
+        var deleted = await _userInterface.DeleteUserAsync(id);
         if (!deleted)
+        {
+            return NotFound();
+        }
+        return NoContent();
+    }
+
+    [HttpPut("/users/{id}")]
+    public async Task<IActionResult> Update(int id, UserRequestModel request)
+    {
+        var updated = await _userInterface.UpdateUserAsync(id, request);
+        if (!updated)
         {
             return NotFound();
         }

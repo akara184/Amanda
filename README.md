@@ -32,10 +32,12 @@ https://wiki.c2.com/?BlubParadox
 20. https://learn.microsoft.com/en-us/archive/msdn-technet-forums/1ad08507-6dcc-44d1-ba86-2147a8fb1924 < diferença do notation do email
 21. https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-10.0 < sobre dependências
 22. https://stackoverflow.com/questions/54336578/cant-decide-between-taskiactionresult-iactionresult-and-actionresultthing < sobre a diferença do IActionResult vs ActionResult
-
-23. 
-
-
+23. https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbupdateexception?view=efcore-10.0 < error quando tenta salver em database
+24. https://dev.to/stevsharp/mastering-action-and-func-delegates-in-c-real-world-patterns-and-examples-5ggp < sobre: delegate, Func<>, Action<> e Expression<> 
+25. https://stackoverflow.com/questions/793571/why-would-you-use-expressionfunct-rather-than-funct < 
+    - Most times you're going to want Func or Action if all that needs to happen is to run some code. 
+      You need Expression when the code needs to be analyzed, serialized, or optimized before it is run. 
+      Expression is for thinking about code, Func/Action is for running it. 
 
 
 
@@ -61,8 +63,26 @@ https://wiki.c2.com/?BlubParadox
 7. É tentador em OOP criar custom exceptions, mas estou com uma baita preguiça
 8. to com preguiça de colocar msg bnt de erro, entao só vai ser só erro mesmo 
 
-## Carol só fala:
-- projeto precisa ficar registrando o slnx 
+9. Notei algo, ao contrário de outros ambientes, tipo spring boot ou sqlalchemy é bem mais "fácil"
+   lidar com os erros, a integração com o banco de dados é mais simples, ao contrário em um ambiente 
+   C#/asp/.net.... Parece que tudo precisa ser mais explícito, e o que deveria ser simples, é necessário
+   criar na marra uma simples erro
+   
+10. Em geral, é necessário refatorar e organizar certas regras, ver se existe duplicado etc, mas tá funcionando.
+    Eu conseguir aprender certas coisas do ambiente, não é algo que me agrada, não é divertido digitar nesse ambiente
+11. 
+    __ Curried function em C# 
+    
+       Func<int, Func<int, int>> somaCurried = a => b => a + b;
+
+       Func<int, int> soma5 = somaCurried(5);
+       int resultado = soma5(3); // 8
+    __
+
+
+#### apenas coisas para lembrar:
+
+projeto precisa ficar registrando o slnx 
 dotnet sln Amanda.slnx add src/Amanda.Api/Amanda.Api.csproj
 dotnet sln Amanda.slnx add src/Amanda.Application/Amanda.Application.csproj
 dotnet sln Amanda.slnx add src/Amanda.Domain/Amanda.Domain.csproj

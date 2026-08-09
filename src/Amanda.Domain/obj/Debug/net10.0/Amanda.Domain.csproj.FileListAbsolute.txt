@@ -10,3 +10,4 @@
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/refint/Amanda.Domain.dll
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.pdb
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/ref/Amanda.Domain.dll
+/home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.csproj.AssemblyReference.cache

@@ -9,7 +9,6 @@ namespace Amanda.Application.Services.UserServices;
 
 public class UserServices : IUserService {
 
-    // um truquezinho de injeção, para os metodos usar o _context é necessário aparecer no costrutor 
     private readonly UserDbContext _context;
 
     public UserServices(UserDbContext context){
@@ -33,7 +32,7 @@ public class UserServices : IUserService {
 
         return users;
 
-        // Tem como melhorar a lógica, deixo isso para depois
+        // Tem como melhorar a lógica > fodase vai fazer 2 requisicao mesmo preguiça 
     }
     
     public async Task<UserResponseModel?> getUserByIdAsync(int Id){
@@ -56,10 +55,7 @@ public class UserServices : IUserService {
     }
     public async Task<UserResponseModel> createUserAsync(UserRequestModel request){
         
-        // UserResponseModel userModel = new UserResponseModel();
         DateTime localDate = DateTime.UtcNow;
-
-        var getDupUser = _context.Users.Where(db => db.Email == request.Email || db.Username == request.Username);
 
         var createrUser = new User
         {
@@ -80,14 +76,29 @@ public class UserServices : IUserService {
         };
 
         return returnUser;
-
+        // nao tem verificacao de duplicada
     }
 
     public async Task<bool> updateUserAsync(int id, UserRequestModel request){
-
-        var user_db = await _context.Users.Where(db => db.Id == id);
-
         
+        var userDb = await _context.Users.FindAsync(id);
+        if (userDb is null)
+        {
+            return false;
+        }
+        try {
+            userDb.Email = request.Email;
+            userDb.Username = request.Username;
+            userDb.Password = request.Password;
+
+            await _context.SaveChangesAsync();
+            return true;
+        } catch (DbUpdateException){
+            return false;
+        }
+
+
+        //nao tem verificao de duplicada
 
     }
 
@@ -103,9 +114,7 @@ public class UserServices : IUserService {
         _context.Users.Remove(deleteUser);
         await _context.SaveChangesAsync();
         
-        return true; // 
-
-
+        return true; 
 
     }
 

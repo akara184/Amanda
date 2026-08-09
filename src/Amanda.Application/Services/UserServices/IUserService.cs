@@ -5,16 +5,16 @@ namespace Amanda.Application.Services.UserServices;
 public interface IUserService
 {
     
-    Task<IEnumerable<UserResponseModel>> getAllUsersAsync();
+    Task<IEnumerable<UserResponseModel>> GetAllUsersAsync();
     
-    Task<UserResponseModel?> getUserByIdAsync(int Id);
+    Task<UserResponseModel?> GetUserByIdAsync(int Id);
 
-    Task<UserResponseModel> createUserAsync(UserRequestModel request);
+    Task<UserResponseModel> CreateUserAsync(UserRequestModel request);
 
     // Nesses dois vou retornar um bool? tipo é melhor sempre retornar algo, mas um bool? é preguiçoso mas acho que vai 
-    Task<bool> updateUserAsync(int id, UserRequestModel request);
+    Task<bool> UpdateUserAsync(int id, UserRequestModel request);
 
-    Task<bool> deleteUserAsync(int id);
+    Task<bool> DeleteUserAsync(int id);
 
     
     

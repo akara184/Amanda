@@ -1,19 +1,23 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Amanda.Domain.Entities;
 
 public class User {
 
     public int Id { get; set; }
+    
     [Required]
     public String Username { get; set; }
 
-    [Required]
+    [Required]    
     [EmailAddress]
     public String Email { get; set; }
-
+    
     [Required]
-    public String Password { get; set; } 
-
+    public String Password { get; set; }
+    
     [DataType(DataType.Date)] // << preciso checar isso se vale o notation, <<< provavelmente vou tirar idk 
     [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)] // Nao sei se vai funcionar
     public DateTime Date_time { get; set; }
