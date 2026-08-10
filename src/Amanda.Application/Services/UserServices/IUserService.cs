@@ -11,7 +11,6 @@ public interface IUserService
 
     Task<UserResponseModel> CreateUserAsync(UserRequestModel request);
 
-    // Nesses dois vou retornar um bool? tipo é melhor sempre retornar algo, mas um bool? é preguiçoso mas acho que vai 
     Task<bool> UpdateUserAsync(int id, UserRequestModel request);
 
     Task<bool> DeleteUserAsync(int id);
@@ -21,7 +20,6 @@ public interface IUserService
 }
 
 
-// > Task deixa Async
 // https://learn.microsoft.com/pt-br/dotnet/csharp/asynchronous-programming/async-scenarios
 // Task<> se eu quiser retorar o valor, eu posso colocar algo no generics, ou seja qual tipo de valor ele vai carregar
 // Task CreateUser(UserRequestModel request); cria porem nao retorna nada. Eu vou retornar pq se caso eu usar

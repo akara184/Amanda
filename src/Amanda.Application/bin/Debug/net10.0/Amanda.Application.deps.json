@@ -204,6 +204,9 @@
         }
       },
       "Amanda.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.10"
+        },
         "runtime": {
           "Amanda.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

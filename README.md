@@ -1,5 +1,7 @@
 # Amanda
 https://wiki.c2.com/?BlubParadox
+Funciona, precisa refatorar. 
+Só dar um dotnet run na Amanda.Api e acessar o: http://localhost:5043/swagger
 
 
 ## Julia: 
@@ -34,7 +36,7 @@ https://wiki.c2.com/?BlubParadox
 22. https://stackoverflow.com/questions/54336578/cant-decide-between-taskiactionresult-iactionresult-and-actionresultthing < sobre a diferença do IActionResult vs ActionResult
 23. https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbupdateexception?view=efcore-10.0 < error quando tenta salver em database
 24. https://dev.to/stevsharp/mastering-action-and-func-delegates-in-c-real-world-patterns-and-examples-5ggp < sobre: delegate, Func<>, Action<> e Expression<> 
-25. https://stackoverflow.com/questions/793571/why-would-you-use-expressionfunct-rather-than-funct < 
+25. https://stackoverflow.com/questions/793571/why-would-you-use-expressionfunct-rather-than-funct < Sobre o Expression<Func<T>>
     - Most times you're going to want Func or Action if all that needs to happen is to run some code. 
       You need Expression when the code needs to be analyzed, serialized, or optimized before it is run. 
       Expression is for thinking about code, Func/Action is for running it. 

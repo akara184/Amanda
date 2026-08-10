@@ -7,14 +7,11 @@ namespace Amanda.Infrastructure.Data
     {
         public UserDbContext(DbContextOptions<UserDbContext> options) : base(options)
         {
-            
-        }
 
+        }
         
         public DbSet<User> Users { get; set; }
-
-
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(u =>
@@ -32,6 +29,8 @@ namespace Amanda.Infrastructure.Data
 
             });
         }
+
+
 
         
     }

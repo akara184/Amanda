@@ -1,6 +1,7 @@
 /home/akara184/projects/lambda/src/Amanda.Domain/bin/Debug/net10.0/Amanda.Domain.deps.json
 /home/akara184/projects/lambda/src/Amanda.Domain/bin/Debug/net10.0/Amanda.Domain.dll
 /home/akara184/projects/lambda/src/Amanda.Domain/bin/Debug/net10.0/Amanda.Domain.pdb
+/home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.csproj.AssemblyReference.cache
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.AssemblyInfoInputs.cache
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.AssemblyInfo.cs
@@ -10,4 +11,3 @@
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/refint/Amanda.Domain.dll
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.pdb
 /home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/ref/Amanda.Domain.dll
-/home/akara184/projects/lambda/src/Amanda.Domain/obj/Debug/net10.0/Amanda.Domain.csproj.AssemblyReference.cache

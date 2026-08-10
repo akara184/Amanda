@@ -11,4 +11,3 @@ public class UserResponseModel{
 }
 
 
-// Tudo menos o Password, ou seja, é mais conveniente retorna esse resultado

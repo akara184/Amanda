@@ -15,7 +15,7 @@ public class UserServices : IUserService {
         _context = context;
     }
 
-    public  async Task<IEnumerable<UserResponseModel>> getAllUsersAsync(){
+    public  async Task<IEnumerable<UserResponseModel>> GetAllUsersAsync(){
 
         var getUsersCatalog = await _context.Users.ToListAsync();
 
@@ -32,10 +32,10 @@ public class UserServices : IUserService {
 
         return users;
 
-        // Tem como melhorar a lógica > fodase vai fazer 2 requisicao mesmo preguiça 
+        // Tem como melhorar a lógica 
     }
     
-    public async Task<UserResponseModel?> getUserByIdAsync(int Id){
+    public async Task<UserResponseModel?> GetUserByIdAsync(int Id){
 
         var userById = await _context.Users.FindAsync(Id);
 
@@ -53,7 +53,7 @@ public class UserServices : IUserService {
         return userResponse;
 
     }
-    public async Task<UserResponseModel> createUserAsync(UserRequestModel request){
+    public async Task<UserResponseModel> CreateUserAsync(UserRequestModel request){
         
         DateTime localDate = DateTime.UtcNow;
 
@@ -79,7 +79,7 @@ public class UserServices : IUserService {
         // nao tem verificacao de duplicada
     }
 
-    public async Task<bool> updateUserAsync(int id, UserRequestModel request){
+    public async Task<bool> UpdateUserAsync(int id, UserRequestModel request){
         
         var userDb = await _context.Users.FindAsync(id);
         if (userDb is null)
@@ -87,6 +87,7 @@ public class UserServices : IUserService {
             return false;
         }
         try {
+            
             userDb.Email = request.Email;
             userDb.Username = request.Username;
             userDb.Password = request.Password;
@@ -97,12 +98,11 @@ public class UserServices : IUserService {
             return false;
         }
 
-
         //nao tem verificao de duplicada
 
     }
 
-    public async Task<bool> deleteUserAsync(int id){
+    public async Task<bool> DeleteUserAsync(int id){
 
         var deleteUser = await _context.Users.FindAsync(id);
         
