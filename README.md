@@ -1,7 +1,6 @@
 # Amanda
-https://wiki.c2.com/?BlubParadox
-Funciona, precisa refatorar. 
-Só dar um dotnet run na Amanda.Api e acessar o: http://localhost:5043/swagger
+- https://wiki.c2.com/?BlubParadox
+- Funciona, precisa refatorar. Só dar um dotnet run na Amanda.Api e acessar o: http://localhost:5043/swagger
 
 
 ## Julia: 
