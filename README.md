@@ -68,10 +68,7 @@
    lidar com os erros, a integração com o banco de dados é mais simples, ao contrário em um ambiente 
    C#/asp/.net.... Parece que tudo precisa ser mais explícito, e o que deveria ser simples, é necessário
    criar na marra uma simples erro
-   
-10. Em geral, é necessário refatorar e organizar certas regras, ver se existe duplicado etc, mas tá funcionando.
-    Eu conseguir aprender certas coisas do ambiente, não é algo que me agrada, não é divertido digitar nesse ambiente
-11. 
+
     __ Curried function em C# 
     
        Func<int, Func<int, int>> somaCurried = a => b => a + b;
